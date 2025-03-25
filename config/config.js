@@ -12,7 +12,7 @@ export default {
     jwtExpire: process.env.JWT_EXPIRE || '30d',
     env: process.env.NODE_ENV || 'development',
     pagination: {
-      defaultLimit: 10,
+      defaultLimit: 5,
       maxLimit: 50
     }
   };

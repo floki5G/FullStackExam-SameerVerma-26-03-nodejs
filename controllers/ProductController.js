@@ -9,7 +9,7 @@ const {pagination } = config;
 const getProducts = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
-    const limit = 5;
+    const limit = parseInt(req.query.limit) || pagination.defaultLimit;
     const skip = (page - 1) * limit;
     
     // Apply category filter if provided
