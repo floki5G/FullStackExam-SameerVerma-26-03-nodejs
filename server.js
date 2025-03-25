@@ -21,9 +21,10 @@ connectSQL();
 connectMongo();
 
 // Middleware
+// add 'https://amazing-meringue-dc6ecd.netlify.app' , 'http://localhost:3000' to cors
 app.use(cors(
   {
-    origin: 'http://localhost:3000',
+    origin: ['https://amazing-meringue-dc6ecd.netlify.app' , 'http://localhost:3000'],
     credentials: true
   }
 ));
