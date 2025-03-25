@@ -24,7 +24,7 @@ connectMongo();
 // add 'https://amazing-meringue-dc6ecd.netlify.app' , 'http://localhost:3000' to cors
 app.use(cors(
   {
-    origin: ['https://amazing-meringue-dc6ecd.netlify.app' , 'http://localhost:3000'],
+    origin: ['https://scintillating-churros-599e4e.netlify.app' , 'http://localhost:3000'],
     credentials: true
   }
 ));
